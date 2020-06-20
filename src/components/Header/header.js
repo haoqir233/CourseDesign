@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:47:32 
+ * @Last Modified by: huqirui
+ * @Last Modified time: 2020-06-20 20:03:14
+ */
 import React from 'react';
 import "./index.scss"
 import store from '../../store';
@@ -21,7 +27,6 @@ export default class Header extends React.Component {
 
     componentWillMount() {
         if(window.localStorage.userName === undefined){
-            // this.props.history.push('/')
             window.location.href = '/';
             message.info('请先登录')
         }

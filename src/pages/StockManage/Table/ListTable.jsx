@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:46:27 
+ * @Last Modified by:   huqirui 
+ * @Last Modified time: 2020-06-20 19:46:27 
+ */
 import React, { Component } from 'react'
 import { Table, Input, Button, Space, Popconfirm ,message} from 'antd';
 import { SearchOutlined } from '@ant-design/icons';

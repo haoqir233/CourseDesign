@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:47:11 
+ * @Last Modified by:   huqirui 
+ * @Last Modified time: 2020-06-20 19:47:11 
+ */
 import React from 'react';
 import { Layout} from 'antd';
 import './LayoutStyle.scss';

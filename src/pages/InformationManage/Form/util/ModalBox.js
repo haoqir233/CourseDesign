@@ -7,7 +7,6 @@ import { message } from 'antd';
   * @param values  表单提交的所有键值对
   */
 export const showModal = (values) => {
-    console.log('Received values of form: ', values);
     const action = {
         type: 'visibleChange',
         value: true

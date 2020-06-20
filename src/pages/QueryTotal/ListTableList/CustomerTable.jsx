@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:45:43 
+ * @Last Modified by: huqirui
+ * @Last Modified time: 2020-06-20 19:59:40
+ */
 import React from 'react'
 import { Table, Input, Button, Space, Popconfirm } from 'antd';
 import Highlighter from 'react-highlight-words';
@@ -33,7 +39,6 @@ export default class ListTable extends React.Component {
             
             if (response.response.data.res) {
                 mes = response.response.data.data
-                console.log(mes);
                 mes.map((item)=>{
                     item.key = item.bankNumber
                     return true;

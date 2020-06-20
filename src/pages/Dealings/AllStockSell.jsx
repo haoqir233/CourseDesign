@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:44:23 
+ * @Last Modified by:   huqirui 
+ * @Last Modified time: 2020-06-20 19:44:23 
+ */
 import React, { Component } from 'react';
 import ListTable from './Table/ListTableSell';
 import { Card } from 'antd';

@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:46:42 
+ * @Last Modified by: huqirui
+ * @Last Modified time: 2020-06-20 20:00:21
+ */
 import React, { Component } from 'react'
 import { Button, Form, Input, message, Modal, Select,InputNumber } from 'antd';
 import request, { IP } from '../../../../utils/request';
@@ -57,7 +63,6 @@ export default class ModalSub extends Component {
     }
 
     sell = (value) =>{
-        console.log(Object.keys(value)[0]);
         if(Object.keys(value)[0] === 'sellNumber' &&
             value[Object.keys(value)]>this.state.addSellValue.stockNumber){
                 message.error('销售数量不能大于库存数量');
@@ -67,8 +72,6 @@ export default class ModalSub extends Component {
                 message.error('结账数额大于数量*单价')
         }
         if(Object.keys(value)[0] === 'price'){
-            console.log(Number(this.state.sellNumberValue)*Number(this.state.price));
-            
             const action = {
                 type: 'price',
                 value: value[Object.keys(value)],

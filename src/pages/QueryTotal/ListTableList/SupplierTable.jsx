@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:45:46 
+ * @Last Modified by:   huqirui 
+ * @Last Modified time: 2020-06-20 19:45:46 
+ */
 import React from 'react'
 import { Table, Input, Button, Space, Popconfirm } from 'antd';
 import Highlighter from 'react-highlight-words';
@@ -30,7 +36,6 @@ export default class ListTable extends React.Component {
             "cmd": "findAllSupplier",
             "type": "request",
         }).then(response => {
-            console.log(response);
             if (response.response.data.res) {
                 mes = response.response.data.data
                 mes.map((item)=>{

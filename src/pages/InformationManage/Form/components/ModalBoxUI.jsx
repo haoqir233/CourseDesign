@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:44:50 
+ * @Last Modified by: huqirui
+ * @Last Modified time: 2020-06-20 20:01:30
+ */
 import { Button, Modal } from 'antd';
 import React, { Component } from 'react';
 import * as ModalBox from '../util/ModalBox';
@@ -38,7 +44,6 @@ export default class ModalBoxUI extends Component {
                 "type": "request",
                 "request": this.state.sformValue
             }).then(response => {
-                console.log(response);
                 if (response.response.data.res) {
                     message.success(response.response.data.message)
                 } else {

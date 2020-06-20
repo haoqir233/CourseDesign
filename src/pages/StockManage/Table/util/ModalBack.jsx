@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:46:35 
+ * @Last Modified by:   huqirui 
+ * @Last Modified time: 2020-06-20 19:46:35 
+ */
 import React, { Component } from 'react'
 import { Button, Form, Input, message, Modal, Select, InputNumber } from 'antd';
 import request, { IP } from '../../../../utils/request';

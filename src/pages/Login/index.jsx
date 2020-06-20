@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:45:13 
+ * @Last Modified by: huqirui
+ * @Last Modified time: 2020-06-20 20:08:28
+ */
 import React from 'react';
 import request, { IP } from '../../utils/request';
 import './style.scss';
@@ -10,6 +16,11 @@ export default class Login extends React.Component {
             account: '',
             password: ''
         }
+    }
+
+    componentWillMount(){
+        console.log("%c 有朋自远方来, 不亦说乎.", "background:#24272A; color:#ffffff", "");
+        console.log('Created by 胡启瑞 & 赵宇杰');
     }
     
 
@@ -36,7 +47,6 @@ export default class Login extends React.Component {
                 }
             }).then(response => {
                 if (response.response.data.res) {
-                    console.log(response);
                     message.success('用户' + response.response.data.userName + '登录成功!');
                     localStorage.userName = response.response.data.userName;
                     localStorage.account = this.state.account;

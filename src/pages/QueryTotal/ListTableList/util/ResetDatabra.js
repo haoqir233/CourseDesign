@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:45:54 
+ * @Last Modified by: huqirui
+ * @Last Modified time: 2020-06-20 19:59:39
+ */
 import store from '../store/index';
 import { message } from 'antd';
 import request, { IP } from '../../../../utils/request';
@@ -7,7 +13,6 @@ import request, { IP } from '../../../../utils/request';
   * @param values 所有的键值对
   */
 export const onFinish = (values) => {
-    console.log('f',values)
     const url = IP + '/rest/brand/modifyBrand';
         request("POST", url, {
             "cmd": "modifyBrand",

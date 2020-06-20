@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:46:46 
+ * @Last Modified by: huqirui
+ * @Last Modified time: 2020-06-20 20:00:34
+ */
 import { message } from 'antd';
 import request, { IP } from '../../../../utils/request';
 import store from '../store/index';
@@ -7,8 +13,6 @@ import store from '../store/index';
   * @param values  表单提交的所有键值对
   */
 export const showModal = (values) => {
-    console.log('Received values of form: ', values);
-
     const action = {
         type: 'visibleChange',
         value: true,

@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:41:00 
+ * @Last Modified by: huqirui
+ * @Last Modified time: 2020-06-20 19:41:35
+ */
 import { QuestionCircleOutlined } from '@ant-design/icons';
 import { Button, Form, Input, Select, Tooltip } from 'antd';
 import React, { Component } from 'react';

@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:44:46 
+ * @Last Modified by:   huqirui 
+ * @Last Modified time: 2020-06-20 19:44:46 
+ */
 import { Form,Select} from 'antd';
 import React from 'react';
 const { Option } = Select;

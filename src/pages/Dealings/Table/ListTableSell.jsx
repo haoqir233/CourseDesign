@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:43:46 
+ * @Last Modified by: huqirui
+ * @Last Modified time: 2020-06-20 20:02:43
+ */
 import React, { Component } from 'react';
 import request, { IP } from '../../../utils/request';
 import { Table, Input, Button, Space, Popconfirm, message, Modal, Form, InputNumber } from 'antd';
@@ -112,7 +118,6 @@ export default class ListTable extends Component {
     };
 
     showModal = (value) => {
-        console.log(value);
         this.setState({
             visible: true,
             onFinishValue: value

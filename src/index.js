@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:47:42 
+ * @Last Modified by:   huqirui 
+ * @Last Modified time: 2020-06-20 19:47:42 
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Switch, HashRouter } from 'react-router-dom';

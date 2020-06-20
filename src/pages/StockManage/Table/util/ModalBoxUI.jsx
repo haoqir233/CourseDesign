@@ -1,3 +1,9 @@
+/*
+ * @Author: huqirui 
+ * @Date: 2020-06-20 19:46:38 
+ * @Last Modified by: huqirui
+ * @Last Modified time: 2020-06-20 20:00:09
+ */
 import { Button, Form, Input, message, Modal } from 'antd';
 import React, { Component } from 'react';
 import request, { IP } from '../../../../utils/request';
@@ -30,7 +36,6 @@ export default class ModalBoxUI extends Component {
   * @param values 所有的键值对
   */
  onFinish = (values) => {
-    console.log('f',values)
     const url = IP + '/rest/stock/modifyStock';
         request("POST", url, {
             "cmd": "modifyStock",
