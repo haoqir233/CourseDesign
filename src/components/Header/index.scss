@@ -1,0 +1,18 @@
+.header {
+    width: 100%;
+    .breadcrumb {
+        padding: 0 20px;
+        .breadcrumb-title {
+            text-align: left;
+            font-size: 18px;
+            float: left;
+        }
+    }
+
+    .welcome {
+        text-align: right;
+        .date {
+            margin-right: 10px;
+        }
+    }
+}
