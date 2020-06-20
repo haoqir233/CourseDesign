@@ -29,7 +29,7 @@ export default class ListTable extends Component {
                 mes = response.response.data.data;
                 mes.map((item)=>{
                     item.key = item.stockUpBackId;
-                    item.payFlag = item.payFlag ? '已付清' : '未付清';
+                    item.Flag = item.payFlag ? '已付清' : '未付清';
                     return true;
                 })
                 this.setState({
@@ -192,10 +192,10 @@ export default class ListTable extends Component {
             },
             {
                 title: '是否付清',
-                dataIndex: 'payFlag',
-                key: 'payFlag',
+                dataIndex: 'Flag',
+                key: 'Flag',
                 width: 150,
-                ...this.getColumnSearchProps('payFlag'),
+                ...this.getColumnSearchProps('Flag'),
             },
             {
                 title: '应收',

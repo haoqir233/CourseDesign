@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import CustomerInfoRegister from './pages/InformationManage/CustomerInfoRegister.jsx';
@@ -20,7 +20,7 @@ import Layout from '../src/components/Layout.jsx';
 import 'antd/dist/antd.css';
 
 ReactDOM.render(
-    <BrowserRouter>
+    <HashRouter>
         <Switch>
             <Route exact path='/' component={Login} />
             <Route exact path='/home' render={() =>
@@ -56,7 +56,7 @@ ReactDOM.render(
             } />
             <Route component={NoFoundPage} />
         </Switch>
-    </BrowserRouter>,
+    </HashRouter>,
     document.getElementById('root')
 );
 
