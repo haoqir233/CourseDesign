@@ -2,6 +2,9 @@ import { Button, Result } from 'antd';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+/**
+ * 404页面
+ */
 const NoFoundPage = () => (
   <Result
     status="404"
