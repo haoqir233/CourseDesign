@@ -2,7 +2,7 @@
  * @Author: huqirui 
  * @Date: 2020-06-20 19:45:13 
  * @Last Modified by: huqirui
- * @Last Modified time: 2020-06-20 20:08:28
+ * @Last Modified time: 2020-06-30 22:55:42
  */
 import React from 'react';
 import request, { IP } from '../../utils/request';
@@ -17,7 +17,9 @@ export default class Login extends React.Component {
             password: ''
         }
     }
-
+    /**
+     * 控制台
+     */
     componentWillMount(){
         console.log("%c 有朋自远方来, 不亦说乎.", "background:#24272A; color:#ffffff", "");
         console.log('Created by 胡启瑞 & 赵宇杰');
